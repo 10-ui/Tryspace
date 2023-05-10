@@ -1,0 +1,79 @@
+@font-face {
+  font-family: 'CookieRunBlack';
+  src: url('font/CookieRun Black.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Mamelon5';
+  src: url('font/Mamelon-5-Hi-Regular.woff2') format('woff2');
+}
+body{
+  background-color: tan;
+}
+/*==================
+ヘッダー表示設定
+==================*/
+header{
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 90px;
+  padding-top: 10px;
+  background-color: tan;
+  border-bottom: 3px solid #665744;
+}
+/*==================
+ロゴ表示設定
+==================*/
+.wrap{
+  text-align: center;
+}
+/*==================
+ナビゲーション設定
+==================*/
+nav ul{
+  width: 100%;
+  display: flex;
+  color: #4b4b4b;
+  list-style: none;
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+  padding-inline-start: 0px;
+  justify-content: center;
+}
+li+li{
+  margin-left: 50px;
+}
+.item{
+  text-decoration: none;
+  color:inherit;
+  font-family: "CookieRunBlack";
+  font-size: 1rem;
+  -webkit-text-stroke: 0.5px #ffffff;
+  /* position: relative;
+  transition: .3s; */
+  display:block;
+  align-items: center;
+}
+/* 
+.item::after {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  content: '';
+  width: 0;
+  height: 2px;
+  background-color: #665744;
+  transition: .3s;
+  transform: translateX(-50%);
+}
+
+.item:hover::after{
+  width: 100%;
+} */
+.con{
+  vertical-align: middle;
+  margin-right: 3px;
+
+}

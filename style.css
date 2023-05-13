@@ -1,3 +1,8 @@
+*{
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+  padding-inline-start: 0px;
+}
 @font-face {
   font-family: 'CookieRunBlack';
   src: url('font/CookieRun Black.woff2') format('woff2');
@@ -13,68 +18,89 @@ body{
 ヘッダー表示設定
 ==================*/
 header{
-  position: fixed;
-  z-index: 999;
+  position: sticky;
   top: 0;
+  z-index: 999;
   left: 0;
   width: 100%;
-  height: 95px;
-  padding-top: 10px;
+  height: 83px;
+  padding-top: 5px;
   background-color: tan;
-  border-bottom: 3px solid #665744;
+  border-bottom: 2px solid #665744;
 }
 /*==================
 ロゴ表示設定
 ==================*/
 .wrap{
   text-align: center;
+  height: 56px;
 }
 /*==================
 ナビゲーション設定
 ==================*/
 nav ul{
-  width: 100%;
+  width: 80%;
   display: flex;
-  color: #4b4b4b;
   list-style: none;
-  margin-block-start: 0px;
-  margin-block-end: 0px;
-  padding-inline-start: 0px;
-  padding-bottom: 10px;
-  justify-content: center;
-}
-li+li{
-  margin-left: 30px;
+  padding-bottom: 3px;
+  justify-content: space-between;
+  margin: auto;
 }
 .item{
   text-decoration: none;
-  color:inherit;
+  color: #4b4b4b;
   font-family: "CookieRunBlack";
   font-size: 1rem;
-  -webkit-text-stroke: 0.5px #ffffff;
-  /* position: relative;
-  transition: .3s; */
+  -webkit-text-stroke: 0.8px #ffffff;
   display:block;
   align-items: center;
 }
-/* 
-.item::after {
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  content: '';
-  width: 0;
-  height: 2px;
-  background-color: #665744;
-  transition: .3s;
-  transform: translateX(-50%);
+.wrap-connect{
+  display: inline-block;
 }
-
-.item:hover::after{
-  width: 100%;
-} */
-.con{
+.discord-icon{
   vertical-align: middle;
-  margin-right: 3px;
-
+  margin-right: 2px;
+  text-align: center;
+  display: inline-block;
+}
+/*==================
+スライダー設定
+==================*/
+.slider-items {
+  margin: auto;
+  padding-top: 5px;
+  width: 100%;
+  height: 100%;
+}
+.slider-items img {
+  width: 100%;
+}
+/* arrow */
+.slick-arrow{
+  z-index: 2;
+  top: 50%;
+  margin-top: -10px;
+  width: 15px;
+  height: 15px;
+  border-top: 3px solid #d2b48c;
+  border-right: 3px solid #d2b48c;
+  opacity: .8;
+}
+.slick-arrow::before{
+  content: '';
+}
+.slick-prev{
+  left: 15px;
+  transform: rotate(-135deg);
+}
+.slick-next{
+  right: 15px;
+  transform: rotate(45deg);
+}
+/*==================
+フッター設定
+==================*/
+footer p{
+  text-align: center;
 }
